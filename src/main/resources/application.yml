@@ -16,6 +16,11 @@ server:
     servlet:
         context-path: /
 spring:
+    servlet:
+      multipart:
+          location: uploads
+          max-file-size: 10MB
+
     mail:
         host: smtp.gmail.com
         port: 587
@@ -34,7 +39,7 @@ spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: Qwerty123@
-        url: jdbc:mysql://3.26.210.21:3306/board
+        url: jdbc:mysql://52.64.89.168/board
         username: board
     devtools:
         livereload:
