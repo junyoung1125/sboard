@@ -16,13 +16,25 @@ server:
     servlet:
         context-path: /
 spring:
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: wnsdud060451@gmail.com
+        password: pzyqnsdijjxiqvdc
+        properties:
+          mail:
+              smtp:
+                  auth: true
+                  timeout: 5000
+                  starttls:
+                      enable: true
     application:
         name: sboard
         version: ${version}
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: Qwerty123@
-        url: jdbc:mysql://13.125.98.52:3306/board
+        url: jdbc:mysql://3.26.210.21:3306/board
         username: board
     devtools:
         livereload:
